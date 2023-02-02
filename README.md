@@ -12,16 +12,16 @@ The objective for this project was to develop an ASP.NET application, exposing t
 
 ## My Assumptions
 
-* Member resources would be stored in an in-memory data service.
+* Member resources will be stored in an in-memory data service.
 
 <br>
 
 ## How To Build The Application
 
-The application was built using Microsoft.NETCore.App 6.0.13
+The application was built using `Microsoft.NETCore.App 6.0.13`
 
 To build the application:
-1. Navigate `"/unattended-test-webservices/src/WebServices"`
+1. In the Terminal navigate to `/unattended-test-webservices/src/WebServices`
 2. Run the following command: 
    ```sh
    dotnet build
@@ -32,26 +32,26 @@ To build the application:
 ## How To Run The Application
 
 To run the application:
-1. Navigate to `"/unattended-test-webservices/src/WebServices"`
+1. In the Terminal navigate to `/unattended-test-webservices/src/WebServices`
 2. Run the following command: 
    ```sh
    dotnet run
    ```
-3. An HTTP GET request to `https://localhost:{PORT}/member` will return a list of all Member resources
-4. An HTTP GET request to `https://localhost:{PORT}/member/6398592762` will return a Member resource for a given unique memberNumber
+3. To return a list of all Member resources make an HTTP GET request to `https://localhost:{PORT}/member`
+4. To return a Member resource for a given unique memberNumber make an HTTP GET request to `https://localhost:{PORT}/member/6398592762`
 
 <br>
 
 ## Testing The Application
 
-I used Postman to test the application.
+I used `Postman` to test the application.
 
 My testing coverered 3 main scenarios:
-1. Returns a list of all Member resources (with 200 status)
-2. Returns a Member resource for memberNumber "6398592763" (with 200 status)
-3. Returns "NotFoundResult as unique ID does not exist" message when trying to return a Member resource for a given unique memberNumber which does not exist (with 404 status)
+1. The web service returns a list of all Member resources (with 200 status)
+2. The web service returns a Member resource for memberNumber "6398592763" (with 200 status)
+3. The web service returns "NotFoundResult as unique ID does not exist" message when trying to return a Member resource for a given unique memberNumber which does not exist (with 404 status)
 
-My testing results were as follows:
+My test results were as follows:
 
 1. GET `https://localhost:{PORT}/member`
 
