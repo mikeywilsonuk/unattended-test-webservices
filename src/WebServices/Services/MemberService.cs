@@ -2,6 +2,13 @@ using WebServices.Models;
 
 namespace WebServices.Services;
 
+/** 
+Create an in-memory data store for member resources.
+Member resources include string and int data types.
+'memberNumber' is the unique identifier and will be a hard coded string data type of 10 numbers.
+Create a parent/child nested list to store member data and any products associated with the member.
+**/
+
 public static class MemberService
 {
     static List<Member> Members { get; }

@@ -6,6 +6,14 @@ namespace WebServices.Controllers;
 
 [ApiController]
 [Route("[controller]")]
+
+/** 
+Create MemberController class with public methods exposed as HTTP endpoints.
+Create a public method to GETALL member resources.
+Create a public method to GET unique member resource using 'memberNumber' as the identifier.
+**/
+
+
 public class MemberController : ControllerBase
 {
     public MemberController() 

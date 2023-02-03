@@ -13,6 +13,7 @@ The objective for this project was to develop an ASP.NET application, exposing t
 ## My Assumptions
 
 * Member resources will be stored in an in-memory data service.
+* The API will use the model-view-controller architecture.
 
 <br>
 

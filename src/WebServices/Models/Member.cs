@@ -1,5 +1,10 @@
 namespace WebServices.Models;
 
+/**
+Create model classes to represent a Member and Product.
+These models pass data in the web API and persist Member and Product options in the MemberService data store.
+**/
+
 public class Product
 {
     public string? name { get; set; }
